@@ -9,7 +9,7 @@ import com.xu.service.GetGirlService;
  * com.xu.dubbo.com.xu.provider
  * springboot-dubbo
  */
-@Service(timeout = 5000)
+@Service
 public class GetGirlImpl implements GetGirlService {
     @Override
     public Girl get() {

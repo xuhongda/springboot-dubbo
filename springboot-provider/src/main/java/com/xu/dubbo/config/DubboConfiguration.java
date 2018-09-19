@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 public class DubboConfiguration {
-    @Bean
+  /*  @Bean
     public ApplicationConfig applicationConfig() {
         ApplicationConfig applicationConfig = new ApplicationConfig();
         applicationConfig.setName("provider-test");
@@ -25,5 +25,5 @@ public class DubboConfiguration {
         registryConfig.setAddress("zookeeper://127.0.0.1:2181");
         registryConfig.setClient("curator");
         return registryConfig;
-    }
+    }*/
 }

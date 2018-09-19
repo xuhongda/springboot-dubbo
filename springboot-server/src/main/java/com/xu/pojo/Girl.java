@@ -1,11 +1,13 @@
 package com.xu.pojo;
 
+import java.io.Serializable;
+
 /**
  * @author xuhongda on 2018/9/19
  * com.xu.pojo
  * springboot-dubbo
  */
-public class Girl {
+public class Girl implements Serializable {
     private String name;
     private String age;
 
