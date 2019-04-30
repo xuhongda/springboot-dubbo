@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ImportResource;
  * @author xuhongda
  */
 @SpringBootApplication
-@ImportResource("static/provider.xml")
+@ImportResource("static/dubbo-provider.xml")
 public class SpringbootProviderApplication {
 
     public static void main(String[] args) {

@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ImportResource;
  * @author xuhongda
  */
 @SpringBootApplication
-@ImportResource("static/consumer.xml")
+@ImportResource("static/dubbo-consumer.xml")
 public class SpringbootConsumerApplication {
 
     public static void main(String[] args) {
