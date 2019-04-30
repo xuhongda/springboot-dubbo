@@ -1,5 +1,10 @@
 package com.xu.pojo;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
 import java.io.Serializable;
 
 /**
@@ -7,23 +12,11 @@ import java.io.Serializable;
  * com.xu.pojo
  * springboot-dubbo
  */
+@Data
+@ToString
+@AllArgsConstructor
+@NoArgsConstructor
 public class Girl implements Serializable {
     private String name;
     private String age;
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getAge() {
-        return age;
-    }
-
-    public void setAge(String age) {
-        this.age = age;
-    }
 }

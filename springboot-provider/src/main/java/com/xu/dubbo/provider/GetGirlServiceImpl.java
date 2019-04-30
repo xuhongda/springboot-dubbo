@@ -1,16 +1,16 @@
 package com.xu.dubbo.provider;
 
-import com.alibaba.dubbo.config.annotation.Service;
 import com.xu.pojo.Girl;
 import com.xu.service.GetGirlService;
+import org.springframework.stereotype.Service;
 
 /**
  * @author xuhongda on 2018/9/19
  * com.xu.dubbo.com.xu.provider
  * springboot-dubbo
  */
-@Service
-public class GetGirlImpl implements GetGirlService {
+@Service("getGirlServiceImpl")
+public class GetGirlServiceImpl implements GetGirlService {
     @Override
     public Girl get() {
         Girl girl = new Girl();

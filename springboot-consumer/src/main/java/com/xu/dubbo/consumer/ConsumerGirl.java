@@ -1,6 +1,5 @@
 package com.xu.dubbo.consumer;
 
-import com.alibaba.dubbo.config.annotation.Reference;
 import com.xu.pojo.Girl;
 import com.xu.service.GetGirlService;
 import com.xu.service.TestService;
@@ -15,21 +14,25 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ConsumerGirl {
 
-    @Reference
-    private GetGirlService getGirlService;
 
-    @Reference
-    private TestService testService;
+    private final TestService testService;
 
-    @GetMapping("getGirl")
-    public Girl getGirl(){
-        return getGirlService.get();
+    private final GetGirlService getGirlService;
+
+    public ConsumerGirl(TestService testService, GetGirlService getGirlService) {
+        this.getGirlService = getGirlService;
+        this.testService = testService;
     }
 
 
     @GetMapping("test")
     public String test() {
         return testService.test();
+    }
+
+    @GetMapping("getGirl")
+    public Girl getGirl() {
+        return getGirlService.get();
     }
 
 }
