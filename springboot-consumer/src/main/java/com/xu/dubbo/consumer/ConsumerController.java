@@ -6,20 +6,23 @@ import com.xu.service.TestService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Date;
+
+
 /**
  * @author xuhongda on 2018/9/19
  * com.xu.dubbo.com.xu.consumer
  * springboot-dubbo
  */
 @RestController
-public class ConsumerGirl {
+public class ConsumerController {
 
 
     private final TestService testService;
 
     private final GetGirlService getGirlService;
 
-    public ConsumerGirl(TestService testService, GetGirlService getGirlService) {
+    public ConsumerController(TestService testService, GetGirlService getGirlService) {
         this.getGirlService = getGirlService;
         this.testService = testService;
     }
@@ -28,6 +31,11 @@ public class ConsumerGirl {
     @GetMapping("test")
     public String test() {
         return testService.test();
+    }
+
+    @GetMapping("getTime")
+    public Date getTime() {
+        return testService.getTime();
     }
 
     @GetMapping("getGirl")

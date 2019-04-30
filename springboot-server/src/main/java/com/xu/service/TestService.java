@@ -1,5 +1,7 @@
 package com.xu.service;
 
+import java.util.Date;
+
 /**
  * @author xuhongda on 2018/9/20
  * com.xu.service
@@ -8,4 +10,6 @@ package com.xu.service;
 public interface TestService {
 
     String test();
+
+    Date getTime();
 }
