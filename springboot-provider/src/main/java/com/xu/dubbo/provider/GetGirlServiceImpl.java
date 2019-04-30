@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
  * com.xu.dubbo.com.xu.provider
  * springboot-dubbo
  */
-@Service("getGirlServiceImpl")
+@Service
 public class GetGirlServiceImpl implements GetGirlService {
     @Override
     public Girl get() {

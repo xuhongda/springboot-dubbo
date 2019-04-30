@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
  * com.xu.dubbo.provider
  * springboot-dubbo
  */
-@Service("testServiceImpl")
+@Service
 public class TestServiceImpl implements TestService {
     @Override
     public String test() {
