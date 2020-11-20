@@ -24,6 +24,6 @@ public class TestServiceImpl implements TestService {
 
     @Override
     public void xx() {
-
+        System.out.println("test git");
     }
 }
