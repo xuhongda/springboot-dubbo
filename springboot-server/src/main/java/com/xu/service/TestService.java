@@ -12,4 +12,6 @@ public interface TestService {
     String test();
 
     Date getTime();
+
+    void xx();
 }

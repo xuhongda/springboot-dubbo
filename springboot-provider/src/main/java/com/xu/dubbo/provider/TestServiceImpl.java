@@ -21,4 +21,9 @@ public class TestServiceImpl implements TestService {
     public Date getTime() {
         return new Date();
     }
+
+    @Override
+    public void xx() {
+
+    }
 }
