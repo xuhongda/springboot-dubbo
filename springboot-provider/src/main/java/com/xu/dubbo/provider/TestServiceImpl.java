@@ -26,5 +26,6 @@ public class TestServiceImpl implements TestService {
     public void xx() {
         System.out.println("test git");
         System.out.println("test rebase 001");
+        System.out.println("test rebase 002");
     }
 }
