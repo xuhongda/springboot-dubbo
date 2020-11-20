@@ -25,6 +25,8 @@ public class TestServiceImpl implements TestService {
     @Override
     public void xx() {
         System.out.println("test git");
+        System.out.println("test rebase 001");
+        System.out.println("test rebase 002");
         System.out.println("test rebase 003");
     }
 }
